@@ -105,6 +105,7 @@ main section{
     align-items: center;
     justify-content: center;
     gap: 1vw;
+    z-index: 100;
 }
 #about .container .social-container a{
     /* background: green; */
@@ -115,9 +116,16 @@ main section{
     justify-content: center;
 }
 
+#about .container .social-container a:hover img{
+    filter: none;
+    transform: rotate(360deg) scale(1.2);
+}
+
 #about .container .social-container a img{
     width: 100%;
+    transition: filter .3s ease, transform 1s ease;
     filter: grayscale() brightness(0) contrast(0.8);
+    pointer-events: none;
 }
 
 
