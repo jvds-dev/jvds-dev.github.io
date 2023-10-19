@@ -227,6 +227,8 @@ main{
 }
 #skills .container{
     display: flex;
+    flex-direction: column;
+    gap: 100px;
     padding: 80px;
     /* align-items: center; */
     justify-content: center;
@@ -277,8 +279,9 @@ main{
     font-weight: 600;
     text-align: center;
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(40px) rotateX(90deg);
     transition: opacity .3s ease, transform .3s ease;
+    perspective: 10000;
 }
 
 #skills .skill.hovered{
@@ -288,5 +291,5 @@ main{
 }
 #skills .skill.hovered p{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0px) rotateX(0deg) scale(1.2);
 }
