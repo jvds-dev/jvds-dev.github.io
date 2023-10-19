@@ -294,3 +294,99 @@ main{
     opacity: 1;
     transform: translateY(0px);
 }
+
+#projects{
+    height: 2000px;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+#projects .container{
+    background: var(--bg-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+    gap: 20px;
+    /* justify-content: center; */
+}
+
+#projects .project-container{
+    perspective: 800px;
+}
+#projects .container h3{
+    font-size: 42px;
+    /* background: var(--hl-color); */
+    color: var(--text-color);
+    /* padding: 6px 22px; */
+    /* border-radius: 4px; */
+    margin-bottom: 80px;
+
+}
+#projects .project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    gap: 20px;
+    /* background: green; */
+}
+
+#projects .project.even {
+    /* background: red; */
+    flex-direction: row-reverse;
+}
+#projects .project.even .text-container{
+    /* background: red; */
+    justify-content: right;
+    align-items: flex-end;
+    text-align: end;
+    /* flex-direction: row-reverse; */
+}
+
+
+
+#projects .project .text-container{
+    /* background: red; */
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: left;
+    /* width: 30%; */
+    max-width: 400px;
+}
+#projects .project .text-container h4{
+    font-size: 32px;
+}
+#projects .project .text-container p{
+    font-size: 24px;
+}
+#projects .project .text-container h5{
+    font-size: 20px;
+}
+#projects .project .text-container button{
+    font-size: 24px;
+    background: var(--hl-color);
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+#projects .project .project-container .project-img{
+    width: 400px;
+    height: 250px;
+    background-image: url(assets/projects/id1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+    transition: all .2s;
+    box-shadow: 2px 2px 10px #1d1d1d55;
+    
+}
+.project-img:hover{
+    perspective: 5000px;
+    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX));
+    box-shadow: var(--shadowX) var(--shadowY) 50px #1d1d1d22;
+}
