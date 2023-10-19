@@ -89,7 +89,7 @@ main{
 }
 
 #about{
-    background: greenyellow;
+    background: var(--bg-gray);
     display: flex;
     /* justify-content: center; */
     max-width: 1350px;
@@ -103,37 +103,52 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */  
-    /* height: 100%;    */
+    justify-content: center;  
+    height: 100%;   
     /* width: 5vw;   */
-    max-height: 140px;
-    background: gray;
+    /* max-height: 140px; */
+    /* background: gray; */
 }
+#about .social-container a{
+    /* background: red; */
+    z-index: 1;
+}
+#about .social-container a:hover img{
+    /* background: red; */
+    filter: none;
+    transform: rotate(360deg);
+}
+
 #about .social-container img{
+    pointer-events: none;
+    z-index: 0;
+    transition: transform 1s ease, filter .5s ease;
     width: 46px;
     height: 46px;
+    filter: grayscale() brightness(0) contrast(.8);
 }
 
 
 #about .image-container{
-    background: blue;
+    /* background: blue; */
     width: 50%;
     position: relative;         
 }
 #about .image-container img{
     position: absolute;
-    top: 0;
+    top: 70px;
     /* left: 130px; */
     left: 20%;
     width: 400px;
     z-index: 1;
     /* transform: translate(40%); */
+    filter: grayscale();
 }
 #about .image-container #blob{
     position: absolute;
-    top: 0;
+    top: 70px;
     /* left: 40px; */
-    left: 10%;
+    left: 0;
     width: 500px;
     animation: rotating 2s linear infinite;
 }
@@ -147,7 +162,7 @@ main{
 }
 
 #about .text-container{
-    background: pink;
+    /* background: pink; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,7 +177,7 @@ main{
     justify-content: center;
     align-items: center;
     font-size: calc(1vw + 2rem);
-    background: red;
+    /* background: red; */
     color: var(--text-color);
 }
 #about .text-container h2 strong{
