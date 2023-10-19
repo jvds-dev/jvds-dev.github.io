@@ -12,7 +12,7 @@ elements.forEach((element) => {
     element.addEventListener('mouseleave', ()=> {
         setTimeout(()=>{
             element.classList.remove('hovered');
-        },200)
+        },300)
         canHover = true
         // setTimeout(()=>{
         //     canHover = true;
