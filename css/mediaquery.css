@@ -1,4 +1,8 @@
 @media(max-width: 1120px){
+    header nav{
+        padding-right: 80px;
+    }
+
     #about .image-container img{
         left: 60px;
         width: 300px;
@@ -13,6 +17,9 @@
 }
 
 @media(max-width: 920px){
+    header nav{
+        padding-right: 22px;
+    }
     #about{
         flex-direction: column;
         padding: 0;
@@ -59,5 +66,18 @@
     #about .text-container{
         order: 3;
         margin-bottom: 56px;
+    }
+}
+
+@media (max-width: 680px){
+    header nav{
+        display: none;
+    }
+    header .logo-container{
+        padding: 0;
+        /* background: red; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
