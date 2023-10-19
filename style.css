@@ -279,7 +279,7 @@ main{
     font-weight: 600;
     text-align: center;
     opacity: 0;
-    transform: translateY(40px) rotateX(90deg);
+    transform: translateY(40px);
     transition: opacity .3s ease, transform .3s ease;
     perspective: 10000;
 }
@@ -291,5 +291,5 @@ main{
 }
 #skills .skill.hovered p{
     opacity: 1;
-    transform: translateY(0px) rotateX(0deg) scale(1.2);
+    transform: translateY(0px);
 }
