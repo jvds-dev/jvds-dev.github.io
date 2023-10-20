@@ -180,12 +180,42 @@ main{
     gap: 22px;
     /* justify-content: center; */
 }
-#skills .container .strong-skills h3{
+#skills .container .strong-skills h3 {
     font-size: 42px;
-    background: var(--hl-color);
-    color: var(--text-color);
+    color: var(--hl-color);
     padding: 6px 22px;
-    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+#skills .container .strong-skills h3::before{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: var(--hl-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: lineAnimation 3s ease infinite;
+}
+
+#skills .container .strong-skills h3.learning::before{
+    /* background: red; */
+    animation: lineAnimation 3s ease infinite reverse;
+}
+@keyframes lineAnimation {
+    0% {
+        left: 0;
+        width: 0;
+    }
+    50% {
+        left: 0;
+        width: 100%;
+    }
+    100% {
+        left: 100%;
+        width: 0;
+    }
 }
 #skills .container .strong-skills .skills{
     display: flex;
