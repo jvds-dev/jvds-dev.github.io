@@ -199,13 +199,6 @@ main{
     /* filter: grayscale(100%); */
     transition: all 1s ease;
 }
-/* #skills .container .strong-skills .skills p{
-    color: #fff;
-    font-weight: 600;
-    text-align: center;
-    opacity: 0;
-    transition: all .3s ease;
-} */
 
 #skills .skill{
     display: flex;
