@@ -1,6 +1,8 @@
 @media(max-width: 1120px){
-    header nav{
+    .header-container nav{
         padding-right: 80px;
+        /* position: absolute; */
+        /* background: red; */
     }
 
     #about .image-container img{
@@ -17,16 +19,16 @@
 }
 
 @media(max-width: 920px){
-    header nav{
-        padding-right: 22px;
+    .header-container nav{
+        padding-left: 22px;
     }
     #about{
         flex-direction: column;
         padding: 0;
         justify-content: center;
         align-items: center;
-        gap: 16px;
-        height: 100vh;
+        gap: 34px;
+        /* height: 1vh; */
         max-height: 10000px;
         /* padding-bottom: 200px; */
         /* margin-bottom: 1000px; */
@@ -34,6 +36,9 @@
     }
     #about .social-container{
         order: 2;
+        /* background: green; */
+        height: 100%;
+        max-height: 56px;
         flex-direction: row;
     }
     #about .image-container{
@@ -53,6 +58,7 @@
         transform: translate(40px);
     }
     #about .image-container #blob{
+        /* display: none; */
         left: -50%;
         right: -50%;
         top: -40px;
@@ -69,15 +75,24 @@
     }
 }
 
-@media (max-width: 680px){
-    header nav{
+@media (max-width: 720px){
+    .header-container nav{
         display: none;
     }
-    header .logo-container{
+    .header-container .logo-container{
         padding: 0;
         /* background: red; */
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    #about{
+        overflow-x: hidden;
+    }
+    /* #about .image-container{
+        display: none;
+    } */
+    #skills, #projects{
+        display: none;
     }
 }
