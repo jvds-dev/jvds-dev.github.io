@@ -81,7 +81,6 @@
     }
     .header-container .logo-container{
         padding: 0;
-        /* background: red; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -89,10 +88,27 @@
     #about{
         overflow-x: hidden;
     }
-    /* #about .image-container{
-        display: none;
-    } */
-    #skills, #projects{
+    #skills .container .strong-skills h3{
+        font-size: 26px;
+        background: var(--hl-color);
+        color: var(--text-color);
+        padding: 4px 18px;
+        border-radius: 4px;
+    }
+    #skills .skill{
+        display: flex;
+        align-items: center;
+    }
+    #skills .container .strong-skills .skills{
+        gap: 14px;
+    } 
+    #skills .container .strong-skills .skills img{
+        width: 50px;
+    } 
+    #skills .skill p{
+        font-size: 12px;
+    }   
+    #projects{
         display: none;
     }
 }
