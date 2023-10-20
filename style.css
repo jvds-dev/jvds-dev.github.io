@@ -13,70 +13,9 @@
 
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background: var(--bg-gray);
-}
-
-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--bg-gray);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 1350px;
-    height: 56px;
-    z-index: 1000;
-}
-
-header .logo-container{
-    /* background: blue; */
-    display: flex;
-    align-items: center;
-    padding-left: 86px;
-    width: 30%;
-    height: 100%;
-
-}
-
-header #logo{
-    color: var(--text-color);
-    /* background: blue; */
-    font-size: 32px;
-    font-weight: 700;
-    top: 16px;
-}
-header nav{
-    /* background: yellow; */
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    padding-right: 140px;
-    width: 70%;
-    height: 100%;
-    /* position: absolute; */
-    /* right: 56px; */
-}
-
-header nav ul{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-header nav ul li{
-    list-style: none;
-    color: var(--text-color);
-    font-size: 24px;
-    font-weight: 400;
-}
-
-header nav ul li:last-child{
-   background: var(--hl-color);
-   color: #fff;
-   padding: 5px 10px; 
-   border-radius: 4px;
 }
 
 main{
