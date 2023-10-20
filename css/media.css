@@ -89,18 +89,14 @@
         overflow-x: hidden;
     }
     #skills .container .strong-skills h3{
-        font-size: 26px;
-        background: var(--hl-color);
-        color: var(--text-color);
-        padding: 4px 18px;
-        border-radius: 4px;
+        /* background: red; */
+        font-size: 24px;
     }
-    #skills .skill{
-        display: flex;
+    #skills .container .strong-skills .skills .skill{
+        /* background: red; */
+        /* display: flex; */
         align-items: center;
-    }
-    #skills .container .strong-skills .skills{
-        gap: 14px;
+        /* justify-content: center; */
     } 
     #skills .container .strong-skills .skills img{
         width: 50px;
@@ -111,4 +107,16 @@
     #projects{
         display: none;
     }
+}
+
+@media(max-width:500px){
+    #skills{
+        height: 100%;
+    }
+    #skills .container .strong-skills .skills{
+        /* background: red; */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    } 
 }
