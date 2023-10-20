@@ -3,7 +3,7 @@ header{
     /* align-items: center; */
     justify-content: center;
     /* background: red; */
-    background: var(--bg-gray);
+    background: #fff;
     position: fixed;
     top: 0;
     width: 100%;
@@ -15,6 +15,7 @@ header{
     align-items: center;
     justify-content: center;
     background: var(--bg-gray);
+    background: #fff;
     height: 100%;
     width: 100%;
     max-width: 1350px;
@@ -33,10 +34,15 @@ header{
 
 #logo{
     color: var(--text-color);
+    /* color: var(--hl-color); */
     /* background: blue; */
     font-size: 32px;
     font-weight: 700;
     top: 16px;
+}
+#logo strong{
+    color: var(--hl-color);
+    /* color: var(--text-color); */
 }
 .header-container nav{
     /* background: yellow; */

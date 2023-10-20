@@ -3,12 +3,18 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Raleway', sans-serif; */
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    /* font-family: 'Oswald', sans-serif; */
 }
 
 :root{
     --bg-gray: #D9D9D9;
     --text-color: #1E1E1E;
     --hl-color: #ffc400;
+    /* --hl-color: #06aa00; */
 }
 
 body{
@@ -20,6 +26,7 @@ body{
 
 main{
     background: var(--bg-gray);
+    /* background: #fff; */
     width: 100%;
     /* height: 800px; */
     margin-top: 56px;
@@ -30,6 +37,8 @@ main{
 }
 #about{
     background: var(--bg-gray);
+    /* background: linear-gradient( #d9d9d9, #c9c9c9); */
+    /* background: #fff; */
     display: flex;
     /* justify-content: center; */
     max-width: 1350px;
@@ -162,10 +171,15 @@ main{
     /* align-items: center; */
     justify-content: center;
     height: 800px;
-    background: var(--text-color);
+    /* background: var(--text-color); */
+    background: linear-gradient( 45deg, #1e1e1e, #000); 
     width: 100%;
+    border-top: 2px solid var(--bg-gray);
+    box-shadow: 0px -4px 0 var(--text-color);
+    
 }
 #skills .container{
+    background: none;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -196,14 +210,14 @@ main{
     position: absolute;
     bottom: 0;
     left: 0;
-    animation: lineAnimation 3s ease infinite;
+    animation: lineAnimation 6s ease infinite;
 }
 
 #skills .container .strong-skills h3.learning::before{
     /* background: red; */
-    animation: lineAnimation 3s ease infinite reverse;
+    animation: lineAnimation 6s ease infinite reverse;
 }
-@keyframes lineAnimation {
+/* @keyframes lineAnimation {
     0% {
         left: 0;
         width: 0;
@@ -215,6 +229,20 @@ main{
     100% {
         left: 100%;
         width: 0;
+    }
+} */
+@keyframes lineAnimation {
+    0% , 100%{
+        left: 0;
+        width: 20%;
+    }
+    25%{
+        left: 0;
+        width: 100%;
+    }
+    50%{
+        left: 80%;
+        width: 100%;
     }
 }
 #skills .container .strong-skills .skills{
