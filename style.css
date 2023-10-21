@@ -168,10 +168,36 @@ main{
     border: 3px solid var(--text-color);
     background: none;
     color: var(--text-color);
+    cursor: pointer;
+    position: relative;
 }
 #about .container .buttons-container button:last-child{
     border: none;
     background: var(--hl-color);
+    color: #fff;
+    transition: all .3s ease;
+
+}
+#about .container .buttons-container button:first-child::before{
+    content: '';
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: var(--text-color);
+    z-index: -1;
+    transition: all .3s ease;
+}
+#about .container .buttons-container button:first-child:hover::before{
+    width: 100%;
+}
+#about .container .buttons-container button:first-child:hover{
+    color: var(--bg-gray);
+}
+#about .container .buttons-container button:last-child:hover{
+    border: none;
+    background: var(--text-color);
     color: #fff;
 }
 
@@ -386,6 +412,11 @@ main{
     padding: 5px 10px;
     border-radius: 4px;
     font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#projects .project .text-container button:hover{
+    background: var(--text-color);
 }
 /* #projects .project.even .project-container .project-img{
     border-radius: 0px 20px 20px 0px;
