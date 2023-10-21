@@ -117,9 +117,27 @@
     } 
     #skills .skill p{
         font-size: 12px;
-    }   
-    #projects{
-        display: none;
+    }
+    
+    #projects .project .project-container .project-img{
+        width: 300px;
+        height: 190px;        
+    }
+    #projects .project{
+        gap: 8px;
+    }
+    #projects .project .text-container{
+        gap: 8px;
+    }
+    #projects .project .text-container h4{
+        font-size: 24px;
+    }
+    #projects .project .text-container h5{
+        font-size: 16px;
+    }
+    #projects .project .text-container button{
+        font-size: 18px;
+        padding: 5px 10px;
     }
 }
 
@@ -132,6 +150,41 @@
         align-items: center;
         justify-content: center;
     }
+    #projects .project .project-container .project-img{
+        width: 300px;
+        height: 190px;        
+    }
+    #projects .project{
+        gap: 8px;
+        flex-direction: column;
+        max-width: 300px;
+    }
+    #projects .project.even {
+        flex-direction: column;
+    }
+    #projects .project.even .text-container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+    }
+    #projects .project .text-container{
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #projects .project .text-container h4{
+        font-size: 24px;
+    }
+    #projects .project .text-container h5{
+        font-size: 16px;
+    }
+    #projects .project .text-container button{
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
     .form-section{
         /* background: red; */
         display: flex;
