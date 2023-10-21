@@ -1,0 +1,39 @@
+.hidden{
+    opacity: 0;
+    transform: translateX(-70px);
+    transition: all 2s ease;
+}
+
+.show{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+#skills .container .strong-skills .skills .skill.hidden:nth-child(2){
+    transition-delay: 100ms;
+}
+#skills .container .strong-skills .skills .skill.hidden:nth-child(3){
+    transition-delay: 200ms;
+}
+#skills .container .strong-skills .skills .skill.hidden:nth-child(4){
+    transition-delay: 300ms;
+}
+#skills .container .strong-skills .skills .skill.hidden:nth-child(5){
+    transition-delay: 400ms;
+}
+#skills .container .strong-skills .skills .skill.hidden:nth-child(6){
+    transition-delay: 500ms;
+}
+
+#projects .container .project.hidden:nth-child(3){
+    transition-delay: 200ms;
+}
+#projects .container .project.hidden:nth-child(4){
+    transition-delay: 400ms;
+}
+
+@media (prefers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
