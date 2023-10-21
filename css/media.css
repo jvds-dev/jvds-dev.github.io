@@ -1,8 +1,6 @@
 @media(max-width: 1120px){
     .header-container nav{
         padding-right: 80px;
-        /* position: absolute; */
-        /* background: red; */
     }
 
     #about .image-container img{
@@ -25,20 +23,14 @@
     #about .container{
         flex-direction: column;
         padding: 56px 0;
-        /* margin-top: 80px; */
-        /* margin-bottom: 80px; */
         justify-content: center;
         align-items: center;
         gap: 34px;
         height: 100%;
         max-height: none;
-        /* padding-bottom: 200px; */
-        /* margin-bottom: 1000px; */
-        /* background: red; */
     }
     #about .container .social-container{
         order: 3;
-        /* background: pink; */
         height: 100%;
         max-height: 56px;
         flex-direction: row;
@@ -48,32 +40,22 @@
         display: flex;
         position: relative;
         justify-content: center;
-        /* display: none; */
     }
     #about .container .image-container img{
         position: initial;
-        /* left: 20%; */
-        /* right: 50%; */
-        /* top: 0; */
-        /* bottom: 0; */
         width: 300px;
         transform: translate(40px);
     }
     #about .container .image-container #blob{
-        /* display: none; */
         left: -50%;
         right: -50%;
         top: -40px;
-        /* left: -80px; */
         width: 400px;
-        /* width: auto; */
         margin: auto;
         padding: auto;
-        /* position: static; */
     }
     #about .container .text-container{
         order: 2;
-        /* margin-bottom: 56px; */
     }
 }
 
@@ -97,14 +79,10 @@
         overflow-x: hidden;
     }
     #skills .container .strong-skills h3{
-        /* background: red; */
         font-size: 24px;
     }
     #skills .container .strong-skills .skills .skill{
-        /* background: red; */
-        /* display: flex; */
         align-items: center;
-        /* justify-content: center; */
     } 
     #skills .container .strong-skills .skills img{
         width: 50px;
@@ -122,7 +100,6 @@
         height: 100%;
     }
     #skills .container .strong-skills .skills{
-        /* background: red; */
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
