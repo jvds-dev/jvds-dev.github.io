@@ -67,6 +67,7 @@ header{
     color: var(--text-color);
     font-size: 24px;
     font-weight: 400;
+    cursor: pointer;
 }
 
 .header-container nav ul li:last-child{
