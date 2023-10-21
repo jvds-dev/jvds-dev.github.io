@@ -298,7 +298,7 @@ main{
 }
 
 #projects{
-    height: 2000px;
+    /* height: 2000px; */
     width: 100%;
     display: flex;
     /* align-items: center; */
@@ -391,4 +391,152 @@ main{
     perspective: 5000px;
     transform: rotateY(var(--rotateY)) rotateX(var(--rotateX));
     box-shadow: var(--shadowX) var(--shadowY) 50px #1d1d1d22;
+}
+
+
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: var(--text-color);
+}
+#contact .container{
+    /* background: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 80px 0;
+}
+.container .form-container{
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .form-container form{
+    background: var(--bg-gray);
+    width: 400px;
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 480px;
+    gap: 20px;
+    box-shadow: 6px 6px 12px #1e1e1e33;
+    z-index: 1;
+}
+
+.form-section{
+    display: flex;
+    gap: 20px;
+    /* gap: 16px; */
+    width: 100%;
+}
+#nome, #whatsapp, #email {
+    width: 100%;
+    height: 32px;
+    outline: none;
+    padding: 0px 10px;
+}
+.form-section .name-input,
+.form-section .whatsapp-input,
+.form-section .email-input{
+    position: relative;
+    width: 100%;
+}
+
+form h3{
+    color: var(--text-color);
+    font-size: 32px;
+    margin-bottom: 50px;
+    /* background: red; */
+    width: 250px;
+    text-align: center;
+}
+
+input{
+    border: none;
+    transition: all .3s ease;
+}
+label{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    height: 100%;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text-color);
+    /* transform: tra; */
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+input.focused{
+    /* background: red; */
+    border: none;
+    border-bottom: 2px solid var(--hl-color);
+}
+label.focused{
+    /* background: blue; */
+    transform: translateY(-22px);
+    /* color: #fff; */
+}
+form button{
+    background: var(--hl-color);
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 20px;
+}
+
+.form-container .social-contact{
+    background: var(--hl-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    gap: 20px;
+
+}
+
+.social-contact .img-container img{
+    background: var(--text-color);
+    background: #fff;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    width: 130px;
+}
+
+.social-contact .email-container p{
+    background: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+.social-contact .email-container p{
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.social-contact .social-icons{
+    /* background: red; */
+    display: flex;
+    gap: 6px;
+}
+.social-contact .social-icons a{
+    /* background: green; */
+    width: 32px;
+    height: 32px;
+    display: flex;    
+}
+.social-contact .social-icons a img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale() contrast(0) brightness(.2);
 }
