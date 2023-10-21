@@ -385,12 +385,12 @@ main{
     transform-style: preserve-3d;
     transition: all .2s;
     box-shadow: 2px 2px 10px #1d1d1d55;
+    box-shadow: var(--shadowX) var(--shadowY) 10px #5e5e5e33;
     
 }
 .project-img:hover{
     perspective: 5000px;
     transform: rotateY(var(--rotateY)) rotateX(var(--rotateX));
-    box-shadow: var(--shadowX) var(--shadowY) 50px #1d1d1d22;
 }
 
 
@@ -408,13 +408,13 @@ main{
     height: 100%;
     padding: 80px 0;
 }
-.container .form-container{
+#contact .container .form-container{
     /* background: green; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container .form-container form{
+#contact .container .form-container form{
     background: var(--bg-gray);
     width: 400px;
     height: 100%;
@@ -461,13 +461,18 @@ input{
     border: none;
     transition: all .3s ease;
 }
+
+label strong{
+    color: var(--hl-color);
+}
+
 label{
     position: absolute;
     top: 7px;
     left: 7px;
     height: 100%;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-color);
     /* transform: tra; */
     pointer-events: none;
@@ -481,7 +486,7 @@ input.focused{
 }
 label.focused{
     /* background: blue; */
-    transform: translateY(-22px);
+    transform: translateY(-24px);
     /* color: #fff; */
 }
 form button{
