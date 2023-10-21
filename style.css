@@ -297,20 +297,24 @@ main{
     transform: translateY(0px);
 }
 
+
+
 #projects{
     /* height: 2000px; */
     width: 100%;
     display: flex;
     /* align-items: center; */
     justify-content: center;
+    background: #fff;
 }
 #projects .container{
     background: var(--bg-gray);
+    background: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px;
-    gap: 20px;
+    padding: 80px 10px;
+    gap: 80px;
     /* justify-content: center; */
 }
 
@@ -323,16 +327,19 @@ main{
     color: var(--text-color);
     /* padding: 6px 22px; */
     /* border-radius: 4px; */
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 
 }
 #projects .project{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 40px;
+    padding: 8px 8px;
     gap: 20px;
-    /* background: green; */
+    background: var(--bg-gray);
+    /* background: red; */
+    border-radius: 4px;
+    /* overflow: hidden; */
 }
 
 #projects .project.even {
@@ -351,18 +358,22 @@ main{
 
 #projects .project .text-container{
     /* background: red; */
+    /* background: #fff; */
     display: flex;
     gap: 20px;
+    /* padding: 8px; */
     flex-direction: column;
     justify-content: left;
     /* width: 30%; */
+    /* height: 200px; */
     max-width: 400px;
 }
 #projects .project .text-container h4{
     font-size: 32px;
+    /* color: red; */
 }
 #projects .project .text-container p{
-    font-size: 24px;
+    font-size: clamp(16px, 1vw + .5rem, 20px);
 }
 #projects .project .text-container h5{
     font-size: 20px;
@@ -376,6 +387,9 @@ main{
     border-radius: 4px;
     font-weight: 600;
 }
+/* #projects .project.even .project-container .project-img{
+    border-radius: 0px 20px 20px 0px;
+} */
 #projects .project .project-container .project-img{
     width: 400px;
     height: 250px;
@@ -383,14 +397,17 @@ main{
     background-size: cover;
     background-repeat: no-repeat;
     transform-style: preserve-3d;
-    transition: all .2s;
-    box-shadow: 2px 2px 10px #1d1d1d55;
-    box-shadow: var(--shadowX) var(--shadowY) 10px #5e5e5e33;
+    transition: all .2s linear;
+    /* border: 2px solid var(--hl-color); */
+    /* box-shadow: none; */
+    /* border-radius: 20px 0px 0px 20px; */
     
 }
-.project-img:hover{
-    perspective: 5000px;
-    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX));
+#projects .project .project-container .project-img:hover{
+    /* perspective: 5000px; */
+    border-radius: 0px;
+    box-shadow: var(--shadowX) var(--shadowY) 10px #5e5e5e33;
+    transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) scale(1.1);
 }
 
 
