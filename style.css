@@ -331,11 +331,11 @@ main{
     display: flex;
     /* align-items: center; */
     justify-content: center;
-    background: #fff;
+    background: #efefef;
 }
 #projects .container{
-    background: var(--bg-gray);
-    background: #fff;
+    /* background: var(--bg-gray); */
+    background: #efefef;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -362,10 +362,14 @@ main{
     align-items: center;
     padding: 8px 8px;
     gap: 20px;
-    background: var(--bg-gray);
+    /* background: var(--bg-gray); */
+    /* background: #efefef; */
+    background: #fff;
     /* background: red; */
     border-radius: 4px;
     /* overflow: hidden; */
+    
+    box-shadow: 4px 4px 10px #55555533;
 }
 
 #projects .project.even {
@@ -379,9 +383,6 @@ main{
     text-align: end;
     /* flex-direction: row-reverse; */
 }
-
-
-
 #projects .project .text-container{
     /* background: red; */
     /* background: #fff; */
